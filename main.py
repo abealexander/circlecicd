@@ -20,7 +20,7 @@ def index():
 port = int(os.getenv("PORT", 5001))
 
 if __name__ == "__main__":
-    host = '127.0.0.1'
+    host = '0.0.0.0'
     # app.run()
     httpd = simple_server.make_server(host=host, port=port, app=app)
 
